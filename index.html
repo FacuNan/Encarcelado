@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Juego Encarcelado</title>
+  <link rel="stylesheet" href="./style.css" />
+  <meta content="viewport" content="width=device-width" />
+</head>
+<body>
+  <div class="logoInicio">
+    <img src="https://media3.giphy.com/media/Ar7teV6WN5WCY/giphy.gif?cid=ecf05e47p4yoj1an2ug96zto65mnkt43976n8gzhnvclr54j&rid=giphy.gif" alt="">
+  </div>
+  
+  <form class="botonesInicio"action="javascript:void(0)" >
+    <input type="button" class="btn-azul" value="Iniciar juego" id="iniciar-juego" onclick="iniciarJuego()">
+
+    <input type="button" class="btn-agregar" value="Agregar Palabra" id="agregar" onclick="agregarPalabra()">
+      <input type="text" id="texto" style="visibility:hidden;">
+  </form>
+      <a href=""><img id="logo" src="./Imagenes/Vector.png" alt=""></a>
+  <div class="juego" style="visibility:hidden;">
+    <img alt="" id="explosion">
+    <div class="hombre-ahorcado" >
+      <img id="hombre" alt="hombre-ahorcado" />
+    </div>
+    <div class="adivinado">
+    
+    </div>
+    <div class="errado"></div>
+    <form class="botones" action="javascript:void(0)" >
+       <input type="button" class="btn-azul" value="Nuevo juego" onclick="nuevoJuego()" />
+      <input type="button" value="Desistir" onclick="desistir()" />
+      </form>
+  </div>
+
+  
+
+<script src="./script.js"></script>
+<script src = " https://unpkg.com/sweetalert/dist/sweetalert.min.js "></script>
+</body>
+</html>

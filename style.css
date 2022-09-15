@@ -1,0 +1,145 @@
+body {
+    background-color: #bbb
+  }
+  #logo{
+   margin-left:20px;
+   margin-top:20px;
+  }
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  html {
+    font-size: 16px;
+  }
+  .logoInicio {
+    position:absolute;
+    right:37%;
+    bottom: 35%;
+  }
+  .logoInicio img{
+    border-radius:20px;
+  }
+  
+  #hombre {
+    max-width: 100%;
+    max-height: 100%;
+    display: inline-block;
+  }
+  
+  .hombre-ahorcado {
+    width: 100vw;
+    text-align: center;
+    margin-top:  4rem;
+    margin-bottom: 2rem;
+    height: 16.75rem;
+  }
+  
+  .adivinado {
+    text-align: center;
+    color: #002462;
+    font-size: 1.8rem;
+  }
+  
+  .letra {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+  }
+  
+  .adivinada {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-bottom: solid 1px #002462;
+    margin-left: 0.4rem;
+    line-height: 4.5rem;
+  }
+  
+  .errado {
+    text-align:  center;
+    margin-top: 1rem;
+    color: #242d34;
+  }
+  
+  .errada {
+    margin-left: 1rem;
+  }
+  
+  [type="button"] {
+    width: 15rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: solid 1px #0a3871;
+    color: #0a3871;
+    background: inherit;
+    cursor: pointer;
+  
+    
+  }
+  
+  .btn-azul {
+    background-color: #0a3871;
+    color: #fff;
+    border-color: #000;
+  }
+  
+  .botones {
+    text-align: center;
+    margin-top: 3rem;
+
+   
+  }
+  
+.botonesInicio{
+  width: 20%;
+  text-align: center;
+    margin-top: 3rem;
+  z-index:1;
+  position:absolute;
+  right:40%;
+  bottom:10%;
+  display:inline-block;
+
+
+}
+
+#texto{
+  padding:10px;
+  width:110%;
+  border-radius:20px;
+
+
+}
+
+.botonesInicio [type="button"]{
+  margin:2px;
+}
+
+#explosion{
+  position:absolute;
+  left:10%;
+  top:0;
+}
+@media screen and (max-width: 800px) {
+  .botonesInicio{
+    width: 20%;
+    text-align: center;
+      margin-top: 3rem;
+    z-index:1;
+    position:absolute;
+    right:55%;
+    bottom:10%;
+    display:inline-block;
+  
+  }
+  .logoInicio {
+    position:absolute;
+    right:20%;
+    bottom: 35%;
+  }
+  .texto{
+    width:110%;
+  }
+
+}
