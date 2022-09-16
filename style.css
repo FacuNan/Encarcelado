@@ -40,6 +40,7 @@ body {
     text-align: center;
     color: #002462;
     font-size: 1.8rem;
+    
   }
   
   .letra {
@@ -54,6 +55,7 @@ body {
     border-bottom: solid 1px #002462;
     margin-left: 0.4rem;
     line-height: 4.5rem;
+   
   }
   
   .errado {
@@ -121,6 +123,45 @@ body {
   left:10%;
   top:0;
 }
+
+/**Estilos del teclado**/
+#teclado {
+  width:590px;
+  background-color: #aaa;
+  overflow: hidden;
+}
+#letras>span {
+  padding:10px;
+  width: 55px;
+  text-align: center;
+  margin:2px;
+  float:left;
+  cursor:pointer;
+  border-radius: 3px;
+  background-color:white;
+  box-sizing: border-box;
+}
+#letras>span.space {
+  width: calc( 100% - 4px);
+}
+#letras>span.space::after {
+  content:"espacio";
+}
+#disposicionTeclado {
+  clear: both;
+}
+#disposicionTeclado>span {
+  color:gray;
+  cursor:pointer;
+}
+#disposicionTeclado .selected {
+  font-weight: Bold;
+  color:black;
+  cursor:inherit;
+}
+
+
+
 @media screen and (max-width: 800px) {
   .botonesInicio{
     width: 20%;

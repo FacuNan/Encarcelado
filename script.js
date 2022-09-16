@@ -23,6 +23,9 @@
       explosion:document.getElementById('explosion')
     }
   
+  //configuraciòn teclado
+  
+
   
   
     function dibujar(juego) {
@@ -43,7 +46,9 @@
       var adivinado = juego.adivinado
       $elem = $html.adivinado
       // borramos los elementos anteriores
+      
       $elem.innerHTML = ''
+     
       for (let letra of palabra) {
         let $span = document.createElement('span')
         let $txt = document.createTextNode('')
@@ -52,7 +57,7 @@
         }
         $span.setAttribute('class', 'letra adivinada')
         $span.appendChild($txt)
-        $elem.appendChild($span)
+        $elem.appendChild($span).innerHTML;
       }
   
       //letras erradas
@@ -65,7 +70,7 @@
         let $txt = document.createTextNode(letra)
         $span.setAttribute('class', 'letra errada')
         $span.appendChild($txt)
-        $elem.appendChild($span)
+        $elem.appendChild($span).innerText;
       }
     }
   
@@ -91,7 +96,7 @@
     
   
       
-  
+    
       // Si es letra de la palabra
       if (letras.has(letra)) {
         // agregamos a la lista de letras adivinadas
@@ -163,6 +168,8 @@
       for (let letra of palabra) {
         letras.add(letra)
       }
+
+      console.log(letras)
       juego.letras = letras
       juego.restante = letras.size
   
